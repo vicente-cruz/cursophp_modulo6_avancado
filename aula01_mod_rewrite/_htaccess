@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+#OBS: Para esta configuração, TANTO O "INDEX.PHP" QUANTO O ".HTACCESS" DEVEM ESTAR NA "PASTA RAIZ"
+#RewriteRule ^(.*)$ /index.php?q=$1 [L]
+RewriteRule ^(.*)$ /modulo6_avancado/aula1_mod_rewrite/index.php?q=$1 [L]
