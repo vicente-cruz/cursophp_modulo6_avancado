@@ -37,7 +37,7 @@ foreach ($routes as $route => $newurl) {
             echo "Parte 4) Remove chaves dos templates, ficam só ids.<br/>";
             // Se encontrar '{' e/ou '}', substitui por vazio.
             $id_templates = preg_replace('(\{|\})', '', $templates[0]);
-            echo "<strong>itens</strong>: "; print_r($id_templates);
+            echo "<strong>ID Templates</strong>: "; print_r($id_templates);
             echo "<br/><br/>";
         }
         
